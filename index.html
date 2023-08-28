@@ -25,15 +25,15 @@
   </head>
 
   <body>
-    <!-- <header class="header">
+     <header class="header">
       <div class="header-container container">
-        <nav class="nav-wrapper"> -->
+        <nav class="nav-wrapper"> 
           <!-- Logo -->
-          <!-- <a class="logo-head logo link" href="./index.html"
-            >Web<span class="logo-header">Studio</span></a -->
+          <a class="logo-head logo link" href="./index.html"
+            >Web<span class="logo-header">Studio</span></a 
           >
           <!-- Navigation -->
-          <!-- <ul class="nav-list list">
+          <ul class="nav-list list">
             <li class="nav-item">
               <a class="nav current link" href="./index.html">Studio</a>
             </li>
@@ -44,9 +44,9 @@
               <a class="nav link" href="">Contacts</a>
             </li>
           </ul>
-        </nav> -->
+        </nav>
         <!-- Adress -->
-        <!-- <address class="adress">
+         <address class="adress">
           <ul class="adress-list list">
             <li class="adress-item">
               <a class="adress-list-item link" href="mailto:info@devstudio.com"
@@ -60,8 +60,17 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-icon" width="32" height="22">
+             <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!-- Hero section -->
@@ -405,7 +414,7 @@
         </div> -->
         <!-- Social media -->
 
-        <!-- <div class="media-container">
+         <!-- <div class="media-container">
           <p class="media-title">Social media</p>
           <ul class="media-link list">
             <li class="footer-media-item">
@@ -535,7 +544,75 @@
           <button class="modal-form-btn" type="submit">Send</button>
         </form>
       </div>
+    </div> -->
+      
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="mobile-menu-btn menu-toggle js-close-menu">
+        <svg class="menu-close-icon" width="8" height="8" >
+           <use href="./images/icons.svg#close-menu"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-item"><a href="" class="mobile-menu-link link">Studio</a></li>
+        <li class="mobile-menu-item"><a href="" class="mobile-menu-link link">Portfolio</a></li>
+        <li class="mobile-menu-item"><a href="" class="mobile-menu-link link">Contacts</a></li>
+        </ul>
+
+         <ul class="mobile-adress-list list">
+             <li class="mobile-adress-item">
+              <a class="adress-mobile-item link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-adress-item">
+              <a class="adress-mobile-item link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+      <ul class="mobile-media-link list">
+            <li class="mobile-media-item ">
+              <a class="social-media" href="https://www.instagram.com/">
+                <svg class="social-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="mobile-media-item">
+              <a class="social-media" href="https://www.twitter.com/">
+                <svg class="social-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="mobile-media-item">
+              <a class="social-media" href="https://www.facebook.com/">
+                <svg class="social-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="mobile-media-item">
+              <a class="social-media" href="https://www.linkedin.com/">
+                <svg class="social-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
     </div>
-    <script src="./js/modal.js"></script> -->
+
+
+    <!-- <script src="./js/modal.js"></script>  -->
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+  
+     
+     
   </body>
 </html>
