@@ -891,7 +891,9 @@ img {
 
 @media screen and (min-width: 1158px) {
   .footer-container {
+    display: flex;
     flex-wrap: nowrap;
+    column-gap: 0;
   }
 }
 
@@ -1013,7 +1015,7 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
-  .footer-subscribe {
+  .footer-subscribe-form {
     margin-right: 0;
   }
 }
